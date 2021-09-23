@@ -1,0 +1,105 @@
+.header__top {
+  padding: calc(20px + 20 * ((100vw - 320px) / (1280 - 320))) 0 calc(20px + 5 * ((100vw - 320px) / (1280 - 320))) 0;
+}
+
+.header__top-list {
+  grid-column-gap: calc(30px + 15 * ((100vw - 320px) / (1280 - 320)));
+}
+.header__top-list .header__top-link {
+  color: #D0D0D0;
+  font-size: calc(12px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
+.header__top-list .current__language img {
+  width: 12px;
+  height: 12px;
+}
+
+.header__top-report {
+  background: #CB11AB;
+  border-radius: 60px;
+  grid-column-gap: calc(4px + 3 * ((100vw - 320px) / (1280 - 320)));
+  color: white;
+  padding: calc(5px + 1 * ((100vw - 320px) / (1280 - 320))) calc(7px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
+.header__top-report span {
+  color: inherit;
+  font-size: calc(12px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
+.header__top-report i {
+  color: inherit;
+}
+
+.header__bottom {
+  padding: calc(15px + 10 * ((100vw - 320px) / (1280 - 320))) 0;
+}
+
+.header__logo-holder {
+  grid-column-gap: calc(5px + 3 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.hamburger-menu-holder {
+  width: calc(45px + 20 * ((100vw - 320px) / (1280 - 320)));
+  height: calc(45px + 20 * ((100vw - 320px) / (1280 - 320)));
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+}
+
+.header__logo {
+  font-size: calc(35px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.header__search-form {
+  width: calc(400px + 130 * ((100vw - 320px) / (1280 - 320)));
+  height: calc(45px + 10 * ((100vw - 320px) / (1280 - 320)));
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  background: #A541A7D9;
+  border-radius: 60px;
+  padding: 0 calc(15px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+.header__search-form input {
+  background: none;
+  font-size: calc(12px + 2 * ((100vw - 320px) / (1280 - 320)));
+  font-weight: 600;
+  color: white;
+}
+.header__search-form input::-webkit-input-placeholder {
+  color: #CACACA;
+}
+.header__search-form input::-moz-placeholder {
+  color: #CACACA;
+}
+.header__search-form input:-ms-input-placeholder {
+  color: #CACACA;
+}
+.header__search-form input::-ms-input-placeholder {
+  color: #CACACA;
+}
+.header__search-form input::placeholder {
+  color: #CACACA;
+}
+
+.search__form-icons {
+  grid-column-gap: calc(8px + 4 * ((100vw - 320px) / (1280 - 320)));
+}
+.search__form-icons i {
+  font-size: calc(16px + 4 * ((100vw - 320px) / (1280 - 320)));
+  color: #CACACAB0;
+}
+.search__form-icons i.active {
+  color: #CACACA;
+}
+
+.header__actions {
+  grid-column-gap: calc(20px + 10 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.header__action .action__icon {
+  font-size: calc(18px + 4 * ((100vw - 320px) / (1280 - 320)));
+  color: white;
+}
+.header__action .action__title {
+  color: white;
+  font-size: calc(12px + 2 * ((100vw - 320px) / (1280 - 320)));
+}

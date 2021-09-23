@@ -1,0 +1,50 @@
+.footer .wrapper {
+  padding: calc(40px + 10 * ((100vw - 320px) / (1280 - 320))) 0 calc(40px + 10 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.footer__nav {
+  grid-column-gap: calc(20px + 15 * ((100vw - 320px) / (1280 - 320)));
+  padding-bottom: calc(15px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.footer__item.footer__item-indentation {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: calc(7px + 3 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.footer__item-nav .nav-title {
+  display: block;
+  color: white;
+  font-size: calc(14px + 2 * ((100vw - 320px) / (1280 - 320)));
+  font-weight: 600;
+  margin-bottom: calc(8px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
+.footer__item-nav .nav-list {
+  display: block;
+}
+.footer__item-nav .nav-list.nav-list-indentation {
+  padding-top: calc(7px + 3 * ((100vw - 320px) / (1280 - 320)));
+}
+.footer__item-nav .nav-list li .nav-link {
+  font-size: calc(12px + 2 * ((100vw - 320px) / (1280 - 320)));
+  font-weight: 400;
+  color: #E2E2E2;
+}
+
+.footer__item-img {
+  max-width: calc(130px + 10 * ((100vw - 320px) / (1280 - 320)));
+  width: 100%;
+}
+
+.apple-store {
+  margin: calc(10px + 10 * ((100vw - 320px) / (1280 - 320))) 0;
+}
+
+.footer__copyright {
+  padding: calc(15px + 5 * ((100vw - 320px) / (1280 - 320))) 0;
+}
+.footer__copyright > .footer__copyright-title {
+  color: white;
+  font-size: calc(12px + 2 * ((100vw - 320px) / (1280 - 320)));
+}

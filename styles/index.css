@@ -1,0 +1,155 @@
+.home-slider {
+  border-radius: 45px 45px 0 0;
+}
+.home-slider .swiper {
+  position: relative;
+  padding: calc(40px + 25 * ((100vw - 320px) / (1280 - 320))) 0;
+}
+.home-slider .swiper .swiper-wrapper {
+  height: calc(400px + 20 * ((100vw - 320px) / (1280 - 320)));
+}
+.home-slider .swiper .swiper-wrapper .swiper-slide .slide__info-holder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.home-slider .swiper .swiper-wrapper .swiper-slide .slide__info-holder .slide__title {
+  font-size: calc(35px + 9 * ((100vw - 320px) / (1280 - 320)));
+}
+.home-slider .swiper .swiper-wrapper .swiper-slide .slide__info-holder .slide__button {
+  background: #FF0000;
+  padding: calc(12px + 3 * ((100vw - 320px) / (1280 - 320))) calc(14px + 2 * ((100vw - 320px) / (1280 - 320)));
+  font-size: calc(22px + 4 * ((100vw - 320px) / (1280 - 320)));
+  border-radius: 10px;
+}
+.home-slider .swiper .swiper-button-prev, .home-slider .swiper .swiper-button-next {
+  width: calc(40px + 20 * ((100vw - 320px) / (1280 - 320)));
+  height: calc(40px + 20 * ((100vw - 320px) / (1280 - 320)));
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+.home-slider .swiper .swiper-button-prev i, .home-slider .swiper .swiper-button-next i {
+  color: black;
+  font-size: calc(20px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+.home-slider .swiper .swiper-button-prev {
+  left: 5%;
+}
+.home-slider .swiper .swiper-button-next {
+  right: 5%;
+}
+.home-slider .swiper .swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: calc(20px + 5 * ((100vw - 320px) / (1280 - 320)));
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  grid-column-gap: calc(7px + 3 * ((100vw - 320px) / (1280 - 320)));
+}
+.home-slider .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: calc(14px + 2 * ((100vw - 320px) / (1280 - 320)));
+  height: calc(14px + 2 * ((100vw - 320px) / (1280 - 320)));
+  border-radius: 50%;
+  background: #EEA4E1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.home-slider .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: calc(20px + 3 * ((100vw - 320px) / (1280 - 320)));
+  height: calc(20px + 3 * ((100vw - 320px) / (1280 - 320)));
+  background: #CB11AB;
+}
+
+.product-out-indentation {
+  padding: calc(20px + 10 * ((100vw - 320px) / (1280 - 320))) 0;
+}
+
+.product-out__title {
+  font-size: calc(30px + 6 * ((100vw - 320px) / (1280 - 320)));
+  display: block;
+}
+
+.product-out__title-indentation {
+  margin-bottom: calc(15px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.products__list {
+  grid-column-gap: calc(20px + 5 * ((100vw - 320px) / (1280 - 320)));
+  grid-row-gap: calc(10px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.home-banner-indentation {
+  padding: calc(10px + 15 * ((100vw - 320px) / (1280 - 320))) 0;
+}
+
+.home-banner__list {
+  grid-column-gap: calc(30px + 15 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.home-banner__item {
+  height: calc(200px + 40 * ((100vw - 320px) / (1280 - 320)));
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.popular-brands {
+  border-radius: 0 0 45px 45px;
+}
+.popular-brands .swiper .swiper-button-next {
+  width: calc(35px + 10 * ((100vw - 320px) / (1280 - 320)));
+  height: calc(35px + 10 * ((100vw - 320px) / (1280 - 320)));
+  border-radius: 50%;
+  background: white;
+  -webkit-box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+.popular-brands .swiper .swiper-button-next i {
+  color: black;
+  font-size: calc(17px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.popular-brands__top {
+  grid-column-gap: calc(10px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+.popular-brands__top .see-all {
+  font-size: calc(12px + 2 * ((100vw - 320px) / (1280 - 320)));
+  color: #CB11AB;
+  padding-bottom: 5px;
+}
+
+.popular-brands__title {
+  font-size: calc(30px + 6 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.popular-brands__list {
+  margin-top: calc(15px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.popular-brands-indentation {
+  padding: calc(30px + 15 * ((100vw - 320px) / (1280 - 320))) 0;
+}
+
+.brands-category {
+  padding: calc(6px + 3 * ((100vw - 320px) / (1280 - 320))) 0;
+  border: 0.5px solid #6A6A6A;
+  border-radius: 60px;
+  font-size: calc(10px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.category-brands__list {
+  width: 100%;
+  margin-top: calc(10px + 5 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.category-brand {
+  width: 100%;
+  height: calc(35px + 5 * ((100vw - 320px) / (1280 - 320)));
+}

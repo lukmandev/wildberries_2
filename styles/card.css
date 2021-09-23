@@ -1,0 +1,62 @@
+.card:hover .quick-view-button {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__top {
+  height: calc(200px + 16 * ((100vw - 320px) / (1280 - 320)));
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.card__top .quick-view-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  white-space: nowrap;
+  font-size: calc(11px + 2 * ((100vw - 320px) / (1280 - 320)));
+  background: white;
+  border-radius: 60px;
+  padding: calc(3px + 1 * ((100vw - 320px) / (1280 - 320))) calc(4px + 1 * ((100vw - 320px) / (1280 - 320)));
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.card__discount {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  background: white;
+  border-radius: 10px;
+  color: #CB11AB;
+  font-size: calc(12px + 2 * ((100vw - 320px) / (1280 - 320)));
+  padding: 0 calc(4px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.card__info {
+  padding: calc(5px + 2 * ((100vw - 320px) / (1280 - 320))) 0;
+  grid-row-gap: 3px;
+}
+
+.card__price-info {
+  grid-column-gap: 10px;
+}
+
+.card__price {
+  font-size: calc(13px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.card__previous-price {
+  color: #989898;
+  font-size: calc(11px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.card__ru-price, .card__title {
+  color: #989898;
+  font-size: calc(11px + 2 * ((100vw - 320px) / (1280 - 320)));
+}
