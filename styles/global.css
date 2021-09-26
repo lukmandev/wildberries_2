@@ -5,6 +5,47 @@ html, body {
   background: linear-gradient(90deg, #c111a7 0.4%, #4b1174 99%);
 }
 
+@-webkit-keyframes spinning {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinning {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.h-inherit {
+  height: inherit;
+}
+
+.loading-block {
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+}
+.loading-block.active {
+  visibility: visible;
+}
+.loading-block i {
+  color: white;
+  font-size: calc(18px + 4 * ((100vw - 320px) / (1280 - 320)));
+}
+.loading-block.active i {
+  -webkit-animation: spinning infinite 1s linear;
+          animation: spinning infinite 1s linear;
+}
+
 .full-wrapper {
   width: 100%;
 }

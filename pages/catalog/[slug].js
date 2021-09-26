@@ -5,7 +5,7 @@ import {wrapper} from '../../redux/reducer';
 
 import Card from "../../components/card/card";
 import ProductSlider from "../../components/pages/catalog/productSlider";
-import Banner from "../../components/banner";
+import Banner from "../../components/pages/catalog/banner";
 import PageLayout from "../../components/main/layout/page";
 
 

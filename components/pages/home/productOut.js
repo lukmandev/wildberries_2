@@ -1,9 +1,7 @@
+import Card from "../../card/card";
 
 
 const ProductOut = ({title, data}) => {
-    const outData = () => {
-        if(data)
-    }
     return (
         <div className="full-wrapper product-out product-out-indentation bg-white">
             <div className="wrapper flex flex-col justify-start items-start">
@@ -13,7 +11,7 @@ const ProductOut = ({title, data}) => {
                     </h1>
                 )}
                 <div className="products__list grid grid-cols-6 w-full items-center justify-between">
-
+                    <Card />
                 </div>
             </div>
         </div>

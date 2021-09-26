@@ -1,13 +1,20 @@
+import {useDispatch} from "react-redux";
+import {setActive} from "../../redux/reducers/product-preview-modal";
+import Link from 'next/link';
 
 
+const Card = ({data}) => {
+    const dispatch = useDispatch();
 
-const Card = () => {
 
+    const openPreviewModal = () => {
+        dispatch(setActive(true));
+    }
     return (
         <div className="card w-full flex justify-start items-start flex-col">
             <div className="card__top w-full">
                 <img src="./assets/images/product-1.png" alt="" className="w-full h-full object-cover" />
-                <button className="quick-view-button font-normal">
+                <button className="quick-view-button font-normal" onClick={openPreviewModal}>
                     Быстрый Просмотр
                 </button>
                 <span className="card__discount font-normal">
@@ -26,9 +33,11 @@ const Card = () => {
                 <span className="card__ru-price font-normal w-full">
                     (3860 Р)
                 </span>
-                <span className="card__title w-full">
-                    Honor / Фитнес-браслет
-                </span>
+                <Link href={`/product/${"123"}`}>
+                    <a className="card__title w-full">
+                        Honor / Фитнес-браслет
+                    </a>
+                </Link>
             </div>
         </div>
     )

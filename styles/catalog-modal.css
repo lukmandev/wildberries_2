@@ -27,7 +27,7 @@
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .catalog-modal__list {
@@ -65,7 +65,9 @@
   font-size: calc(22px + 5 * ((100vw - 320px) / (1280 - 320)));
   color: white;
 }
-
+.close-catalog-modal{
+    margin-left: 10px;
+}
 .subcatalog-modal {
   max-width: calc(700px + 200 * ((100vw - 320px) / (1280 - 320)));
   width: 100%;

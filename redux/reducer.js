@@ -5,7 +5,7 @@ import auth from './reducers/auth';
 import main from './reducers/main';
 import admin from './reducers/admin';
 import menu from './reducers/menu';
-
+import productPreviewModal from './reducers/product-preview-modal';
 
 
 const makeStore = () => configureStore({
@@ -13,7 +13,8 @@ const makeStore = () => configureStore({
         auth,
         main,
         admin,
-        menu
+        menu,
+        productPreviewModal
     },
 });
 

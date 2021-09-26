@@ -15,6 +15,8 @@ import '../styles/header.css';
 import '../styles/icons.css';
 import '../styles/index.css';
 import '../styles/catalog-modal.css';
+import '../styles/rating.css';
+import '../styles/preview-modal.css';
 
 
 const MyApp = ({ Component, pageProps }) => {

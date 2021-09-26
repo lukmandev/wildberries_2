@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="header__top w-full flex justify-between items-center">
                     <div className="header__top-list flex items-center">
                         <span className="current__language flex items-center header__top-link">
-                            Kg &nbsp;<img src="./assets/images/kg.png" />&nbsp;/ &nbsp;Русский
+                            Kg &nbsp;<img src={require("../../../assets/images/kg.png").default.src} />&nbsp;/ &nbsp;Русский
                     </span>
                         <span className="header__top-link">
                             Бишкек

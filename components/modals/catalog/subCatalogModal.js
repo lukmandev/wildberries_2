@@ -1,10 +1,16 @@
-
+import {useDispatch, useSelector} from "react-redux";
+import classNames from "classnames";
 
 
 const SubCatalogModal = () => {
-
+    const dispatch = useDispatch();
+    const state = useSelector(allState => allState.menu);
     return (
-        <div className="subcatalog-modal hidden grid-cols-10 items-start">
+        <div className={
+            classNames("subcatalog-modal grid grid-cols-10 items-start", {
+                hidden: !state.subCatalogIsOpen
+            })
+        }>
             <div className="grid grid-cols-2 left justify-start col-span-6 items-start">
                 <div className="subcatalog__item-holder">
                 <span className="subcatalog__item-title">
@@ -52,7 +58,7 @@ const SubCatalogModal = () => {
                 </div>
             </div>
             <div className="right col-span-4">
-                <img src="./assets/images/subcatalog-img.png" alt="" className="object-cover" />
+                <img src={require('../../../assets/images/product-1.png').default.src} alt="" className="object-cover" />
             </div>
         </div>
     )
